@@ -5,6 +5,7 @@ from idc import *
 from idaapi import *
 
 
+
 class Gullasch(idaapi.plugin_t):
     flags = idaapi.PLUGIN_UNL
     comment = "This is a comment"
@@ -32,7 +33,11 @@ class Gullasch(idaapi.plugin_t):
         self.AddMenuElements()
 
     def GullaschChop(self):
-        subprocess.Popen("debugger.chm", shell = True)
+        import os
+        import subprocess
+        import sys
+        subprocess.Popen(os.path.join(os.path.expanduser('~'), os.path.expandvars('%IDADIR%'),
+    'debugger.chm'), shell=True)
 
 
 
