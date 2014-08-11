@@ -3,8 +3,8 @@ Win-DBG-Helper.
 windbg helper for ida pro
 Help for all Wndbg instruksions
 
-put the two files in ida folder.
-download here https://anonfiles.com/file/0e54e8b925b4ca3ae30d1f41671e4fac
+put the 3 files in ida folder.
+download here https://anonfiles.com/file/35016f8113ec5c90b6f7d86e3fd7d7d8
 and win-dbg-helper.py in plugin folder.
 
 load via Edit >>>>plugins
@@ -14,3 +14,4 @@ it shows under Help Menu
 
 
 Your IDA folder should be in the sytem path
+EDIT Added Opcodes download new files from anonfiles.
