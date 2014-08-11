@@ -13,3 +13,4 @@ it shows under Help Menu
 
 
 
+Your IDA folder should be in the sytem path
