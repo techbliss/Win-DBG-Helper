@@ -25,21 +25,24 @@ class Gullasch(idaapi.plugin_t):
         idaapi.msg("")
 
     def AddMenuElements(self):
-        idaapi.add_menu_item("Help/", "WinDbg helper", "", 0, self.GullaschChop, ())
+        idaapi.add_menu_item("Help/", "WinDbg helper", "", 0, self.Chop, ())
+        idaapi.add_menu_item("Help/", "OpCodes", "", 0, self.Onion, ())
 
     def run(self, arg = 0):
         idaapi.msg("helper found.\n")
 
         self.AddMenuElements()
 
-    def GullaschChop(self):
+    def Chop(self):
         import os
         import subprocess
         import sys
         subprocess.Popen(os.path.join(os.path.expanduser('~'), os.path.expandvars('%IDADIR%'),
     'debugger.chm'), shell=True)
 
-
+    def Onion(self):
+        subprocess.Popen(os.path.join(os.path.expanduser('~'), os.path.expandvars('%IDADIR%'),
+    'opcodes.chm'), shell=True)
 
 
 def PLUGIN_ENTRY():
