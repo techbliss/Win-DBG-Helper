@@ -13,5 +13,8 @@ it shows under Help Menu
 
 
 
-Your IDA folder should be in the sytem path
+Your IDA folder should be in the sytem path like so
+IDADIR
+=path/to/ida
+
 EDIT Added Opcodes download new files from anonfiles.
