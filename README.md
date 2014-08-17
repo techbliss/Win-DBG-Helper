@@ -13,7 +13,7 @@ it shows under Help Menu
 
 
 
-Your IDA folder should be in the sytem path like so
+Your IDA folder should be in the sytem inviroment settings  like so
 IDADIR
 =path/to/ida
 
